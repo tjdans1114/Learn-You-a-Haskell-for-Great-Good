@@ -1,0 +1,1 @@
+myLength xs = length xs

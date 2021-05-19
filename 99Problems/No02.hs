@@ -1,0 +1,1 @@
+myButLast xs = init (last xs)

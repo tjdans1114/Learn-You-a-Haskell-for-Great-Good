@@ -1,0 +1,1 @@
+range a b = drop (a -1) (take b [1 ..])

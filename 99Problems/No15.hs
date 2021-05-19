@@ -1,0 +1,1 @@
+repli xs n = [x | x <- xs, _ <- take n [1 ..]]

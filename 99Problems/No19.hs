@@ -1,0 +1,1 @@
+rotate xs n = drop (rem n (length xs)) xs ++ take (rem n (length xs)) xs

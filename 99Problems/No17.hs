@@ -1,0 +1,1 @@
+split xs n = (take xs n, drop xs n)
