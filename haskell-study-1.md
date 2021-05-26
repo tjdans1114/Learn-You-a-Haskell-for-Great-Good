@@ -102,8 +102,10 @@ nest해서 쓸 수 있어욥
 #### Pairs
 - fst, snd
 ```hs
-Prelude> :t zip
-zip :: [a] -> [b] -> [(a, b)]
+Prelude> :t fst
+fst :: (a, b) -> a
+Prelude> :t snd
+snd :: (a, b) -> b
 ```
 - zip
 ```hs
