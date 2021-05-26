@@ -16,7 +16,7 @@
 - 정적 타입 statically typed 그러나 타입 추론 된다
 
 ### GHCi 사용하기
-- [설치]((https://www.haskell.org/platform/) ghc 포함 이것저것 한번에 받습니다
+- [설치](https://www.haskell.org/platform/) ghc 포함 이것저것 한번에 받습니다
 - `:l [파일이름]`으로 hs 파일 로드 가능
 
 ## 시작하기
