@@ -95,7 +95,7 @@ ghci> [x+y | x <- [1,2,3], y <- [10,100,1000]]
 ```
 nest해서 쓸 수 있어욥
 
-### Tuple(https://downloads.haskell.org/~ghc/latest/docs/html/libraries/base-4.15.0.0/Data-Tuple.html)
+### [Tuple](https://downloads.haskell.org/~ghc/latest/docs/html/libraries/base-4.15.0.0/Data-Tuple.html)
 - heterogeneous
 - fixed size => vector 나타낼 때 자주 씁니다 (2개 pair, 3개 triple)
 
