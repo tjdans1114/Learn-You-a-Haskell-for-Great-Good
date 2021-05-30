@@ -1,1 +1,3 @@
-rotate xs n = drop (rem n (length xs)) xs ++ take (rem n (length xs)) xs
+rotate xs n = drop m xs ++ take m xs
+  where
+    m = rem n (length xs)
