@@ -1,0 +1,1 @@
+totient n = length [x | x <- [1 .. n], gcd n x == 1]
