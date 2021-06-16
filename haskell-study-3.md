@@ -102,7 +102,7 @@ filter :: (a -> Bool) -> [a] -> [a]
 filter _ [] = []
 filter p (x:xs)
   | p x = x: filter p xs
-  | otherwise filter p xs
+  | otherwise = filter p xs
 ```
 - 물론 list comprehension을 대신 사용할 수도 있다.
 
