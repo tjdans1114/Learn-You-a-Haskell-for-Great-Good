@@ -44,7 +44,7 @@ Prelude> max4 3
 - ``a `infix` b`` 일 때 (= `infix a b`)
     - left section : ``(a `infix`) b == a `infix` b``
         - ``(a `infix`) == infix a == \x → a infix x``
-    - right section ``(`infix` b) a == a `infix ` b``
+    - right section ``(`infix` b) a == a `infix` b``
         - ``(infix b) = flip infix b = \x → x `infix` b``
 
 ```haskell
@@ -73,6 +73,16 @@ f $ x = f x
 f . g = \x -> f (g x)
 ```
 - 즉, `f (g x)` , `\x -> f (g x)` 를 각각 `(f . g) x`, `f . g` 로 대신 사용할 수 있다.
+
+### `\` : anonymous function
+* `\`를 사용하여 익명 함수를 정의할 수 있다.
+```haskell
+Prelude> f = \x -> x + 1
+Prelude> :t f
+f :: Num a => a -> a
+Prelude> f 1
+2
+```
 
 ### point-free style (= tacit programming)
 - 적절한 테크닉을 통해 새로운 함수의 parameter를 생략할 수 있다
@@ -157,7 +167,7 @@ foldl' f z (x : xs) =
 
 #### Scan
 - `fold` 중간 결과들의 list
-- 역시 `scanl`, `scanr`, `scanl1`, `scanlr` 버전이 있음
+- 역시 `scanl`, `scanr`, `scanl1`, `scanr1` 버전이 있음
 
 ## References
 - Haskell Wiki
