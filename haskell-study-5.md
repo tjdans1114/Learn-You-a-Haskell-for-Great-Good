@@ -15,7 +15,7 @@ data Int = -2147483648 | -2147483647 | ... | -1 | 0 | 1 | 2 | ... | 2147483647
 - 원을 나타내려면?
     - 튜플?  (43.1, 55.0, 10.4)
 ```haskell
-data Shape = Circle Float Float Float | Rectangle Float Float Float Float Float
+data Shape = Circle Float Float Float | Rectangle Float Float Float Float
     deriving (Show)
 ```
 
