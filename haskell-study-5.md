@@ -267,7 +267,7 @@ inPhoneBook name pnumber pbook = (name,pnumber) `elem` pbook
 type AssocList k v = [(k,v)]
 
 (부분 적용)
-type IntAssocList Int = AssocList Int
+type IntAssocList = AssocList Int
 ```
 
 ### Either, Left, Right
