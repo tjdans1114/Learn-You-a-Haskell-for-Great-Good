@@ -197,10 +197,10 @@ landRight n (left, right)
 
 --
 
-Prelude> return (0,0) >>= landLeft 1 >>= landRight 4 >>= landLeft (-1) >> landRight(-2)
+Prelude> return (0,0) >>= landLeft 1 >>= landRight 4 >>= landLeft (-1) >>= landRight(-2)
 Nothing
 
-Prelude return (0,0) >>= landLeft 1 >> Nothing
+Prelude> return (0,0) >>= landLeft 1 >> Nothing
 Nothing
 ```
 
