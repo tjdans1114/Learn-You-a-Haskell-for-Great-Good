@@ -31,7 +31,7 @@ ghci> :m + Data.List Data.Map Data.Set
 
 
 
-**import할 지정하기**
+**import 지정하기**
 
 ```haskell
 import Data.List (nub, sort)
@@ -42,7 +42,7 @@ import Data.List hiding (nub)
 
 **quailfied import**
 
-- import할 함수 이름이 충돌할 때
+- import 함수 이름이 충돌할 때
 
 ```haskell
 import Data.Map
@@ -178,7 +178,7 @@ ghci Data.Char> ord 'a'
 - 암호문을 해독하는 함수
 
 ```haskell
-ghci> deconde 3 "kh|#pdun"
+ghci> decode 3 "kh|#pdun"
 ```
 
 ```haskell
@@ -306,13 +306,13 @@ findKey key xs = foldr (\(k, v) acc -> if key === k then Just v else acc) Nothin
 
 
 
-**formList**
+**fropmList**
 
 ```haskell
-ghci> :t Map.formList
-Map.formList :: (Ord k) => [(k, v)] -> Map.Map k v
-ghci> Map.formList [("MS",1),("MS",2),("MS",3)]
-formList [("MS",3)]
+ghci> :t Map.fromList
+Map.fromList :: (Ord k) => [(k, v)] -> Map.Map k v
+ghci> Map.fromList [("MS",1),("MS",2),("MS",3)]
+fromList [("MS",3)]
 ```
 
 - 어소시에이션 리스트를 맵으로 변경시킨다
@@ -395,7 +395,7 @@ fromList [("betty","555-29381"),("bonnie","452-29281"),("patsy","493-29281")]
 
 
 
-**formListWith**
+**fromListWith**
 
 ```haskell
 phoneBook = [("betty", "555-5555")
@@ -441,7 +441,7 @@ sphereArea :: Float -> Float
 sphereArea radius = 4 * pi * (radius * 2)
 
 cubeVolume :: Float -> Float
-cubeVloume side = cuboidVolume side side side
+cubeVolume side = cuboidVolume side side side
 
 cubeArea :: Float -> Float
 cubeArea side = cuboidArea side side side
@@ -474,21 +474,21 @@ module Geometry.Sphere
 ) where
 
 volume :: Float -> Float
-vloume radius = (4.0 / 3.0) * pi * (radius ^ 3)
+volume radius = (4.0 / 3.0) * pi * (radius ^ 3)
 
 area :: Float -> Float
 area radius = 4 * pi * (radius ^ 2)
 ```
 
 ```haskell
--- Geometry/Guboid.hs
+-- Geometry/Cuboid.hs
 module Geometry.Cuboid
-( vloume
+( volume
 , area
 ) where
 
-vloume :: Float -> Float -> Float -> Float
-vloume a b c = ractArea a b * c
+volume :: Float -> Float -> Float -> Float
+volume a b c = ractArea a b * c
 
 area :: Float -> Float -> Float -> Float
 area a b c = rectArea a b * 2 + ractArea a c * 2 + ractArea c b * 2
@@ -500,14 +500,14 @@ rectArea a b = a * b
 ```haskell
 -- Geometry/Cube.hs
 module Geometry.Cube
-( vloume
+( volume
 , area
 ) where
 
 import qualified Geometry.Cuboid as Cuboid
 
 volume :: Float -> Float
-volume side = Cuboid.vloume side side side
+volume side = Cuboid.volume side side side
 
 area :: Float -> Float
 area side = Cuboid.area side side side
