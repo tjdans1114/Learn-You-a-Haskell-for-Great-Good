@@ -399,9 +399,9 @@ fromList [("betty","555-29381"),("bonnie","452-29281"),("patsy","493-29281")]
 
 ```haskell
 phoneBook = [("betty", "555-5555")
-						,("betty", "111-2222")
-						,("wendy", "555-5555")
-						,("penny", "555-5555")]
+			,("betty", "111-2222")
+			,("wendy", "555-5555")
+			,("penny", "555-5555")]
 						
 ghci> t: Map.fromListWith
 Map.fromListWith :: Ord k => (a -> a -> a) -> [(k, a)] -> Map k a
