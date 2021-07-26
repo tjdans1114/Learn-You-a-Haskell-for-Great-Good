@@ -123,6 +123,16 @@ isIn :: (Eq a) => [a] -> [a] -> Bool
 needle `isIn` haystack = any (needle `isPrefixOf`) (tails haystack)
 ```
 
+- tails
+
+```haskell
+ghci Data.List> tails [1,3,5]
+[[1,3,5],[3,5],[5],[]]
+
+ghci Data.List> tails "abc"
+["abc", "bc", "c", ""]
+```
+
 - isPrefixOf
 
 ```haskell
