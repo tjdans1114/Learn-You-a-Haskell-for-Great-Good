@@ -47,13 +47,13 @@ import Data.List hiding (nub)
 ```haskell
 import Data.Map
 
-test a b = Data.Map.Filter a b
+test a b = Data.Map.filter a b
 ```
 
 ```haskell
 import qualified Data.Map as M
 
-test a b = M.Filter a b
+test a b = M.filter a b
 ```
 
 - 이름이 충돌하는 함수를 사용할 때 quailfied 를 사용해서 `import`모듈에 같은 이름에 함수가 있을 때 충돌하는 것을 방지할 수 있다.
@@ -87,7 +87,7 @@ ghci Data.List> words "aa bb aa"
 ["aa", "bb", "aa"]
 ```
 
-- Sort
+- sort
 
 ```haskell
 ghci Data.List> sort [1,3,2,4]
