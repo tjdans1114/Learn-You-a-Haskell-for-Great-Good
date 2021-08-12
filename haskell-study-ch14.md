@@ -52,7 +52,7 @@ applyLog (x, log) f = let (y, newLog) = f x in (y, log `mappend` newLog)
 - 예제 (Sum Int)
 ```
 ghci> Sum 3 `mappend` Sum 9
-Sum (getSum = 13)
+Sum (getSum = 12)
 ```
 - 음식 주문에 음료를 추가하는 예제
 ```haskell
